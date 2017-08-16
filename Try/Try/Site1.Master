@@ -22,22 +22,8 @@
                 </div>
                 <div class="header-login">
                     <a href="login.aspx" id="loginname" runat="server">Login</a> |
-                    <a href="logout.aspx">Logout</a>
+                    <a href="/ass/locked/logout.aspx">Logout</a>
                 </div>
-                <!--<div id="before-login"class="navi-menu">
-                    <asp:Menu runat="server" StaticDisplayLevels="2" MaximumDynamicDisplayLevels="4"
-                        Orientation="Horizontal" StaticMenuItemStyle-HorizontalPadding="13px"
-                        StaticMenuItemStyle-VerticalPadding="6px" Height="30px">
-                        <StaticHoverStyle BackColor="#C70609" ForeColor="White" />
-                        <DynamicHoverStyle BackColor="#993333" ForeColor="White" />
-                        <StaticMenuItemStyle  CssClass="staticmenuitem"/>
-                        <DynamicMenuItemStyle CssClass="dynamicmenuitem"/>
-                        <Items>
-                            <asp:MenuItem Text="Home" NavigateUrl="~/index.aspx"></asp:MenuItem>
-                            <asp:MenuItem Text="Registration" NavigateUrl="~/registration.aspx"></asp:MenuItem>
-                        </Items>
-                    </asp:Menu>
-                 </div>-->
                 <div id="after-login" class="navi-menu">
                     <asp:SiteMapDataSource ID="SiteMapDataSource1" Runat="server"/>
                     <asp:Menu DataSourceID="SiteMapDataSource1" runat="server"

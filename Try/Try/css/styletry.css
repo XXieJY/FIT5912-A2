@@ -182,3 +182,7 @@ body {
     top: -19px;
     left: 0px;
 }
+
+.gridheader {
+    text-align: center;
+}

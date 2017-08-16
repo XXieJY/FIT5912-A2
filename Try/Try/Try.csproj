@@ -76,6 +76,7 @@
     <Content Include="ass\locked\doc.aspx" />
     <Content Include="ass\locked\freq.aspx" />
     <Content Include="ass\locked\history.aspx" />
+    <Content Include="ass\locked\logout.aspx" />
     <Content Include="Global.asax" />
     <Content Include="login.aspx" />
     <Content Include="ass\locked\map.aspx" />
@@ -137,6 +138,13 @@
     </Compile>
     <Compile Include="ass\locked\history.aspx.designer.cs">
       <DependentUpon>history.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ass\locked\logout.aspx.cs">
+      <DependentUpon>logout.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ass\locked\logout.aspx.designer.cs">
+      <DependentUpon>logout.aspx</DependentUpon>
     </Compile>
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
