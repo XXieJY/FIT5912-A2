@@ -29,7 +29,7 @@ namespace Try
         protected void Application_AuthenticateRequest(object sender, EventArgs e)
         {
             HttpCookie authcookie = Request.Cookies[FormsAuthentication.FormsCookieName];
-            if (authcookie != null)
+            if (authcookie != null && authcookie.Value != "")
             {
                 FormsAuthenticationTicket authticket = FormsAuthentication.Decrypt(authcookie.Value);
                 string[] uid = authticket.UserData.Split(new char[] { ',' });

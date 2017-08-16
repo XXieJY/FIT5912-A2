@@ -56,6 +56,7 @@ namespace Try
                     , DateTime.Now.AddMinutes(60), false, name, FormsAuthentication.FormsCookiePath);
                 string encryptTicket = FormsAuthentication.Encrypt(ticket);
                 HttpCookie newCookie = new HttpCookie(FormsAuthentication.FormsCookieName, encryptTicket);
+                string cookiename = newCookie.Name;
                 HttpContext.Current.Response.Cookies.Add(newCookie);
                 //Response.Redirect("index.aspx");
                 FormsAuthentication.RedirectFromLoginPage(name, false);

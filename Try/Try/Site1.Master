@@ -22,7 +22,7 @@
                 </div>
                 <div class="header-login">
                     <a href="login.aspx" id="loginname" runat="server">Login</a> |
-                    <a href="/ass/locked/logout.aspx">Logout</a>
+                    <a href="logout.aspx" id="logout" runat="server" style="display:none">Logout</a>
                 </div>
                 <div id="after-login" class="navi-menu">
                     <asp:SiteMapDataSource ID="SiteMapDataSource1" Runat="server"/>

@@ -14,7 +14,7 @@ namespace Try
             if (HttpContext.Current.User.Identity.IsAuthenticated)
             {
                 this.loginname.InnerText = "Hello" + " " + HttpContext.Current.User.Identity.Name + " " + "٩(๑> ₃ <)۶";
-
+                this.logout.Style.Clear();
             }
             if (IsPostBack)
             {
