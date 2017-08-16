@@ -1,0 +1,101 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site1.master.cs" Inherits="Try.Site1" %>
+<!DOCTYPE html>
+<html>
+<head runat="server">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <link rel="stylesheet" type="text/css" media="screen" href="https://cdn.bootcss.com/normalize/7.0.0/normalize.min.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="https://cdn.bootcss.com/bootstrap/3.3.6/css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="css/styletry.css" />
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <div class ="dat-menu-container"> 
+     <!--Navigation form begin -->
+     <form id="form1" class="clearf" runat="server">
+            <!-- header begin -->
+        <header id="myheader">
+            <div class="container clearf">
+                <div class="logo">
+                    <a href="index.aspx"><img  id="logoimage" src="../images/icon.jpg"  alt="logo"/></a> 
+                </div>
+                <div class="header-login">
+                    <a href="login.aspx" id="loginname" runat="server">Login</a> |
+                    <a href="logout.aspx">Logout</a>
+                </div>
+                <!--<div id="before-login"class="navi-menu">
+                    <asp:Menu runat="server" StaticDisplayLevels="2" MaximumDynamicDisplayLevels="4"
+                        Orientation="Horizontal" StaticMenuItemStyle-HorizontalPadding="13px"
+                        StaticMenuItemStyle-VerticalPadding="6px" Height="30px">
+                        <StaticHoverStyle BackColor="#C70609" ForeColor="White" />
+                        <DynamicHoverStyle BackColor="#993333" ForeColor="White" />
+                        <StaticMenuItemStyle  CssClass="staticmenuitem"/>
+                        <DynamicMenuItemStyle CssClass="dynamicmenuitem"/>
+                        <Items>
+                            <asp:MenuItem Text="Home" NavigateUrl="~/index.aspx"></asp:MenuItem>
+                            <asp:MenuItem Text="Registration" NavigateUrl="~/registration.aspx"></asp:MenuItem>
+                        </Items>
+                    </asp:Menu>
+                 </div>-->
+                <div id="after-login" class="navi-menu">
+                    <asp:SiteMapDataSource ID="SiteMapDataSource1" Runat="server"/>
+                    <asp:Menu DataSourceID="SiteMapDataSource1" runat="server"
+                        StaticDisplayLevels="2" MaximumDynamicDisplayLevels="4"
+                        Orientation="Horizontal" StaticMenuItemStyle-HorizontalPadding="13px"
+                        StaticMenuItemStyle-VerticalPadding="6px" Height="30px">
+                        <StaticHoverStyle BackColor="#C70609" ForeColor="White" />
+                        <DynamicHoverStyle BackColor="#993333" ForeColor="White" />
+                        <StaticMenuItemStyle  CssClass="staticmenuitem"/>
+                        <DynamicMenuItemStyle CssClass="dynamicmenuitem"/>
+                    </asp:Menu>
+                 </div>
+            </div>
+        </header>
+    <!--header end -->
+        <div class="header-bottom">
+            <div id="sitemappath" class="container">
+                <asp:SiteMapPath runat="server" 
+                    CssClass="mappath" Font-Size="17px"></asp:SiteMapPath>
+                <div class="right-info">
+                    <p class="cd-headline rotate-1" style="color: #efeadf; cursor: default; font-family: Ropa Sans,sans-serif; font-size: 15px;">
+                        <span>We are open every day from 8:30am till 10:30pm</span>
+                    </p>
+                </div>
+            </div>
+        </div>
+        <!-- navigation form end -->
+        <!-- web content begin -->
+
+        <div class="clearf">
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+    </form>
+        <!-- web content end -->
+
+    </div>
+<!--footer begin -->
+     <footer class="commonfooter">
+        <div class ="befor-foot"></div>
+        <div class ="copyotherInfo" style ="text-align: center;">           
+           <a href="http://unimous.blogspot.com/"><img src="images/blogger.png"></a>
+           <a href="https://www.facebook.com/100001830559656"><img src="images/facebook.png"></a>
+           <a href="http://www.renren.com/230871232"><img src="images/32-renren.png"></a>
+           <a href="http://t.qq.com/unimous"><img src="images/32-qqweibo.png"></a>
+           <a href="http://weibo.com/u/2342610904"><img src="images/32-weibo.png"></a>               
+        </div>
+
+        <div class ="copyright" style="text-align:center">
+           Copyright © 2017 <span class="zh_cn">Jxie</span> &amp; <span class="zh_cn">Lzhen</span>
+        </div>
+
+        <div class ="disclaimer" style="text-align:center;">
+           <a href="http://users.monash.edu.au/~sgrose/msh/disclaimer.htm">Disclaimer</a> | <a href="../Acknowledgement.aspx">Acknowledgement</a>
+            | mailto: <a href="mailto:fit5192@monash.edu">author</a> 
+           <a href="mailto:fit5192@monash.edu">webmaster</a>
+        </div>
+      </footer>
+<!-- footer end -->
+</body>
+</html>

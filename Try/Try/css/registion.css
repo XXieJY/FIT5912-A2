@@ -1,0 +1,101 @@
+::-webkit-datetime-edit {
+    background-color: transparent;
+
+}
+
+::-webkit-datetime-edit-text {
+    color: white;
+    background-color: transparent;
+    padding: 0 .3em;
+}
+
+::-webkit-datetime-edit-fields-wrapper {
+    background-color: #fff;
+}
+
+::-webkit-datetime-edit-year-field {
+    color: grey;
+    background-color: transparent;
+}
+
+::-webkit-datetime-edit-month-field {
+    color: white;
+    background-color: transparent;
+}
+
+::-webkit-datetime-edit-day-field {
+    color: white;
+    background-color:transparent;
+}
+
+::-webkit-inner-spin-button {
+    visibility: hidden;
+}
+
+::-webkit-calendar-picker-indicator {
+    border: 1px solid #ccc;
+    border-radius: 2px;
+    box-shadow: inset 0 1px #fff, 0 1px #eee;
+    background-color: transparent;
+    color: #666;
+}
+
+.agecontainer {
+    margin: 0px 0px 20px 0px;
+}
+
+.radiobutton {
+    margin: 0px 0px 20px 0px;
+    display:inline-block;
+}
+
+.dropdowncountry {
+    margin: 0px 0px 20px 0px;
+}
+
+.checkbox {
+    margin: 0px 0px 20px 0px;
+}
+
+.listbox {
+    margin: 0px 0px 20px 0px;
+}
+
+/*******get resource codes button styles**********/
+
+.sourcecontainer {
+    font-family: Arial;
+    font-weight: bold;
+    font-size: 12px;
+    color: white;
+    position: static;
+    bottom: 12px;
+    float: left;
+    padding:0px 0px 20px 20px;
+    z-index: 100;
+}
+
+.sourcecontainer .getSourceItem {
+    padding: 1px 4px;
+    display: inline-block;
+    background-color: rgba(69, 126, 155, 0.9);
+    box-shadow: 0px 0px 3px rgba(69, 126, 155, 0.9);
+    text-shadow: 1px 1px 0px #333;
+}
+
+.sourcecontainer .getSourceItem:hover {
+    background-color: rgba(29, 86, 115, 0.9);
+    box-shadow: 0px 0px 3px rgba(29, 86, 115, 0.9);
+}
+
+#seeall li:hover{
+    background-color:black;
+    transition: ease-in 300ms;
+}
+
+#seeall li {
+    border: 1px solid rgba(238, 238, 238, 0.41);
+    border-width: thin;
+    margin: 0px 0px 8px 0px;
+    text-align: center;
+}
