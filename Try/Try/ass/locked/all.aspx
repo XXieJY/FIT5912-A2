@@ -1,17 +1,24 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site1.Master" AutoEventWireup="true" CodeBehind="all.aspx.cs" Inherits="Try.ass.locked.all" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
+    <link rel="stylesheet" type="text/css" media="screen" href="css/gridview.css" />
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-    <div class="container" style="padding:50px 0px; text-align:center;">
+    <div class="container" style="padding:50px 0px; text-align:center; height:800px;">
         <asp:SqlDataSource ID="sqlDataSource" runat="server" ConnectionString="<%$ ConnectionStrings:tryConnectionString %>" SelectCommand="SELECT * FROM [Table]" ></asp:SqlDataSource>
         <asp:GridView ID="GridView1" runat="server"
             AutoGenerateColumns="false" DataKeyNames="userid"
             DataSourceID="sqlDataSource" OnRowCommand="GridView_OnRowCommand">
+            <FooterStyle CssClass="GridViewFooterStyle" />
+            <RowStyle CssClass="GridViewRowStyle" />   
+            <SelectedRowStyle CssClass="GridViewSelectedRowStyle" />
+            <PagerStyle CssClass="GridViewPagerStyle" />
+            <AlternatingRowStyle CssClass="GridViewAlternatingRowStyle" />
+            <HeaderStyle CssClass="GridViewHeaderStyle" />
             <Columns>
                 <asp:BoundField DataField="userid" HeaderText="user id" SortExpression="userid" HeaderStyle-CssClass="gridheader"/>
                 <asp:BoundField DataField="fname" HeaderText="first name" SortExpression="fname" />
                 <asp:BoundField DataField="lname" HeaderText="last name" SortExpression="lname" />
-                <asp:BoundField DataField="email" HeaderText="email" SortExpression="email" />
+                <asp:BoundField DataField="email" HeaderText="user email" SortExpression="email" />
                 <asp:BoundField DataField="password" HeaderText="password" SortExpression="password"/>
                 <asp:BoundField DataField="sex" HeaderText="sex" SortExpression="sex"/>
                 <asp:BoundField DataField="nation" HeaderText="nation" SortExpression="nation"/>
@@ -52,4 +59,8 @@
 		    </div><!-- /.modal-content -->
 	    </div><!-- /.modal -->
      </div>
+    <div class="sourcecontainer" style="position:absolute; bottom:0px;">
+        <div class="getSourceItem"><a href="#" style="color:white;" target="_blank">Calendar</a></div>
+        <div class="getSourceItem"><a href="source.aspx?filename=all.aspx" style="color:white;">Display Records</a></div>
+    </div>
 </asp:Content>

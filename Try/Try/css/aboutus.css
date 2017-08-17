@@ -94,3 +94,18 @@
     float:left;
     width:300px;
 }
+
+.aboutContent {
+    width: 500px;
+    filter: alpha(opacity=50);
+    background: #FFF;
+    position: absolute
+}
+
+.aboutbg {
+    background:url(../images/panel-background.jpg);
+}
+
+#aboutcurve {
+    border: 10px;
+}

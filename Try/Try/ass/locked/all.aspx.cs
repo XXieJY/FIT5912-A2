@@ -21,7 +21,6 @@ namespace Try.ass.locked
             if (e.CommandName == "Btn_Operation")
             {
                 string uid = this.GridView1.Rows[Convert.ToInt32(e.CommandArgument)].Cells[0].Text;
-
                 string fname="";
                 string lname = "";
                 string email = "";

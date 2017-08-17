@@ -1,0 +1,111 @@
+﻿body {
+    background-color: transparent;
+}
+
+*::after, *::before {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+#content .block-title h2 {
+    font-family: 'Fauna One', serif;
+    font-size: 36px;
+    font-weight: normal;
+    position: relative;
+    padding: 0px 75px;
+    display: inline-block;
+    margin-bottom: 0px;
+}
+#content .block-title h2 {
+    font-family: 'Fauna One', serif;
+    font-size: 36px;
+    font-weight: normal;
+}
+#content .page-block.lightcolor::after {
+    display: block;
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 11px;
+    bottom: -7px;
+    left: 0px;
+    background: url(../images/panel-block-border-bottom.png) repeat-x center top;
+}
+ .middle-header-bottom{
+    display: block;
+    height: 40px;
+    background: url(../images/panel-block-border-bottom.png) repeat-x top center;
+}
+
+.main-head span {
+    font-size: 30px;
+    padding-bottom: 13px;
+    text-align: center;
+}
+
+.main-we-provide {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;  
+    font-size: 18px;
+    line-height: 1.42857143;
+    color: #333333;
+    max-width: 1100px;
+    margin: 0 auto;
+    text-align: center;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    line-height: 1.42857143;
+}
+
+.blocktitle {
+    display: block;
+    text-align: center;
+    margin-bottom: 40px;
+    font-family: 'Fauna One', serif;
+    font-size: 36px;
+    font-weight: normal;
+}
+
+.split item {
+    display: block;
+}
+
+
+.split item {
+    width: 600px;
+    margin-top:30px;
+}
+
+.auto-style11 {
+    float: left;
+    width: 600px;
+}
+
+.auto-style12 {
+    float: right;
+    width: 600px;
+}
+   
+
+.size3 {
+    float: right;
+    width: 300px;
+}
+.size9{
+    float:left;
+    width:300px;
+}
+
+.aboutContent {
+    width: 500px;
+    filter: alpha(opacity=50);
+    background: #FFF;
+    position: absolute
+}
+
+.aboutbg {
+    background: #f5f0e5 url(../images/panel-background.jpg);
+    margin-bottom: 24px;
+    border-radius: 3px;
+    box-shadow: 0 0 0 1px #ccc0b8, 0 1px 1px 1px rgba(0,0,0,0.07), inset 0 0 0 1px #f5f0e5;
+    text-shadow: 0 1px #fff;
+}

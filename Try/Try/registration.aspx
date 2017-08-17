@@ -109,7 +109,7 @@
 	</div>
     <div class="sourcecontainer">
         <div class="getSourceItem"><a href="#" style="color:white;" target="_blank">Calendar</a></div>
-        <div class="getSourceItem"><a href="source.aspx?filename=registration.aspx" style="color:white;">Records</a></div>
+        <div class="getSourceItem"><a href="source.aspx?filename=registration.aspx" style="color:white;">Add Records</a></div>
     </div>
 </body>
 <!-- //Body -->

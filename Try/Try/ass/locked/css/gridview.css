@@ -1,0 +1,132 @@
+﻿.GridViewStyle {
+    border-right: 2px solid #A7A6AA;
+    border-bottom: 2px solid #A7A6AA;
+    border-left: 2px solid white;
+    border-top: 2px solid white;
+    padding: 4px;
+}
+
+ .GridViewStyle a {
+        color: #FFFFFF;
+}
+
+.GridViewHeaderStyle th {
+    border-left: 1px solid #EBE9ED;
+    border-right: 1px solid #EBE9ED;
+}
+
+.GridViewHeaderStyle {
+    background-color: #5D7B9D;
+    color: White;
+    text-align: center;
+    height: 50px;
+    font-size: 14px;
+    font-weight: normal;
+    font-family: 'Ropa Sans', sans-serif;
+}
+
+.GridViewHeaderStyle th {
+    background-color: #5D7B9D;
+    color: White;
+    text-align: center;
+    height: 50px;
+    font-size: 14px;
+    font-weight: normal;
+    font-family: 'Ropa Sans', sans-serif;
+    width: 100px;
+}
+
+.GridViewFooterStyle {
+    background-color: #5D7B9D;
+    font-weight: bold;
+    color: White;
+}
+
+.GridViewRowStyle {
+    background-color: #E4DCC9;
+    color: #5d4d43;
+    padding: 40px 40px;
+    margin: 40px 40px;
+    width: 50px;
+    height: 40px;
+    font-size: 14px;
+    font-weight: normal;
+    font-family: 'Ropa Sans', sans-serif;
+}
+
+.GridViewAlternatingRowStyle {
+    background-color: #FFFFFF;
+    color: #5d4d43;
+    padding: 20px 20px;
+    margin: 20px 20px;
+    height: 40px;
+    font-size: 14px;
+    font-weight: normal;
+    font-family: 'Ropa Sans', sans-serif;
+}
+
+.GridViewRowStyle td, .GridViewAlternatingRowStyle td {
+        border: 1px solid #EBE9ED;
+        text-align: center;
+
+}
+
+.GridViewRowStyle td:hover, .GridViewAlternatingRowStyle td:hover {
+        background-color:#C70609;
+        color:#FFF;
+        transition:ease-in 350ms;
+}
+
+.GridViewSelectedRowStyle {
+    background-color: #E2DED6;
+    font-weight: bold;
+    color: #333333;
+}
+
+.GridViewPagerStyle {
+    background-color: #284775;
+    color: #FFFFFF;
+}
+
+ .GridViewPagerStyle table /**/ /* to center the paging links*/ {
+        margin: 0 auto 0 auto;
+}
+
+/*******get resource codes button styles**********/
+
+.sourcecontainer {
+    font-family: Arial;
+    font-weight: bold;
+    font-size: 12px;
+    color: white;
+    position: static;
+    bottom: 12px;
+    float: left;
+    padding: 0px 0px 20px 20px;
+    z-index: 100;
+}
+
+.sourcecontainer .getSourceItem {
+    padding: 1px 4px;
+    display: inline-block;
+    background-color: rgba(69, 126, 155, 0.9);
+    box-shadow: 0px 0px 3px rgba(69, 126, 155, 0.9);
+    text-shadow: 1px 1px 0px #333;
+}
+
+.sourcecontainer .getSourceItem:hover {
+    background-color: rgba(29, 86, 115, 0.9);
+    box-shadow: 0px 0px 3px rgba(29, 86, 115, 0.9);
+}
+
+#seeall li:hover {
+    background-color: black;
+    transition: ease-in 300ms;
+}
+
+#seeall li {
+    border: 1px solid rgba(238, 238, 238, 0.41);
+    border-width: thin;
+    margin: 0px 0px 8px 0px;
+    text-align: center;
+}

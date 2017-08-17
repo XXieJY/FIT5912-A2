@@ -13,8 +13,8 @@
     <asp:ContentPlaceHolder ID="head" runat="server">
     </asp:ContentPlaceHolder>
 </head>
-<body>
-    <div class ="dat-menu-container"> 
+<body style="height: 100%;">
+    <div class ="dat-menu-container" style="height:100%;"> 
      <!--Navigation form begin -->
      <form id="form1" class="clearf" runat="server">
             <!-- header begin -->
@@ -56,7 +56,7 @@
         <!-- navigation form end -->
         <!-- web content begin -->
 
-        <div class="clearf">
+        <div class="clearf"  style="height:100%;">
             <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
             </asp:ContentPlaceHolder>
         </div>

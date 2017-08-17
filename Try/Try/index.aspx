@@ -7,8 +7,8 @@
 </asp:Content>
 
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-    <div class="container">
-        <div class="container" id="index-rotator">
+    <div class="container" style="height:100%;">
+        <div class="container" id="index-rotator" style="height:100%;">
                 <asp:AdRotator ID="AdRotator1" runat="server" AdvertisementFile="~/ad/adconfig.xml" BackColor="Black"  BorderWidth="1"/>
             </div>
             <!-- 图片轮滚开始-->
