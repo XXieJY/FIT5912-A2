@@ -73,6 +73,7 @@
       <SubType>Designer</SubType>
     </Content>
     <Content Include="ass\locked\all.aspx" />
+    <Content Include="ass\locked\displayandsearch.aspx" />
     <Content Include="ass\locked\doc.aspx" />
     <Content Include="ass\locked\freq.aspx" />
     <Content Include="ass\locked\history.aspx" />
@@ -118,6 +119,13 @@
     </Compile>
     <Compile Include="ass\locked\all.aspx.designer.cs">
       <DependentUpon>all.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ass\locked\displayandsearch.aspx.cs">
+      <DependentUpon>displayandsearch.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ass\locked\displayandsearch.aspx.designer.cs">
+      <DependentUpon>displayandsearch.aspx</DependentUpon>
     </Compile>
     <Compile Include="ass\locked\doc.aspx.cs">
       <DependentUpon>doc.aspx</DependentUpon>

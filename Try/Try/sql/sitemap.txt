@@ -1,0 +1,55 @@
+Homepage [
+	adrotator
+	master page
+]
+
+Registration page[
+	add records
+	button (click to see all the xxx)
+]
+
+
+About us {
+	out history
+	frequently asked questions
+}
+
+site map
+
+documentation
+
+
+
+=-=-=-=-=-=-=-=-=-=-=-=-=-》》》》》》》》》
+
+dropdown list: 
+
+listbox: 选择nation
+
+textbox: 用户名 密码
+
+radio button list：性别
+
+checkbox: 多选喜爱的食物: cookies, breads,......华夫饼？
+
+
+
+
+textbox用户名
+
+textbox:邮箱
+
+textbox密码
+
+textbox确认密码
+
+textbox:年龄
+
+radio button: 性别
+
+dropdown list: nation
+
+checkbox: 喜爱的食物
+
+listbox: 烘焙风格
+

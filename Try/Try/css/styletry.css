@@ -186,3 +186,9 @@ body {
 .gridheader {
     text-align: center;
 }
+
+/****************************resize html height******************/
+
+html {
+    height: 100%;
+}
