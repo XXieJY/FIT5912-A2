@@ -60,7 +60,10 @@ namespace Try
                 HttpContext.Current.Response.Cookies.Add(newCookie);
                 //Response.Redirect("index.aspx");
                 FormsAuthentication.RedirectFromLoginPage(name, false);
+                Response.Write("<script>"
+                    + "alert('login successful!');");
             }
+        
             else
             {
                 Response.Write("<script>alert('login failed!')</script>");

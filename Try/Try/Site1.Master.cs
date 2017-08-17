@@ -16,10 +16,10 @@ namespace Try
                 this.loginname.InnerText = "Hello" + " " + HttpContext.Current.User.Identity.Name + " " + "٩(๑> ₃ <)۶";
                 this.logout.Style.Clear();
             }
-            if (IsPostBack)
-            {
-                Response.Write("<script>alert('login successful')</script>");
-            }
+           // if (IsPostBack)
+           // {
+           //     Response.Write("<script>alert('login successful')</script>");
+           // }
 
         }
     }
