@@ -119,8 +119,8 @@ body {
     position: absolute;
 }
 
-.ct107 {
-    transition: ease-in-out 300ms;
+#ct107 {
+    transition: ease-in 350ms;
 }
 
 

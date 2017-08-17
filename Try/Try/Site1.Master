@@ -1,90 +1,416 @@
 ﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site1.master.cs" Inherits="Try.Site1" %>
 <!DOCTYPE html>
 <html>
-<head runat="server">
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-    <link rel="stylesheet" type="text/css" media="screen" href="https://cdn.bootcss.com/normalize/7.0.0/normalize.min.css" />
-    <link rel="stylesheet" type="text/css" media="screen" href="https://cdn.bootcss.com/bootstrap/3.3.6/css/bootstrap.min.css" />
-    <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css">
-	<script src="https://cdn.bootcss.com/jquery/2.1.1/jquery.min.js"></script>
-	<script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    <link rel="stylesheet" type="text/css" media="screen" href="css/styletry.css" />
-    <title></title>
-    <asp:ContentPlaceHolder ID="head" runat="server">
-    </asp:ContentPlaceHolder>
-</head>
-<body style="height: 100%;">
-    <div class ="dat-menu-container" style="height:100%;"> 
-     <!--Navigation form begin -->
-     <form id="form1" class="clearf" runat="server">
-            <!-- header begin -->
-        <header id="myheader">
-            <div class="container clearf">
-                <div class="logo">
-                    <a href="index.aspx"><img  id="logoimage" src="../images/icon.jpg"  alt="logo"/></a> 
-                </div>
-                <div class="header-login">
-                    <a href="login.aspx" id="loginname" runat="server">Login</a> |
-                    <a href="logout.aspx" id="logout" runat="server" style="display:none">Logout</a>
-                </div>
-                <div id="after-login" class="navi-menu">
-                    <asp:SiteMapDataSource ID="SiteMapDataSource1" Runat="server"/>
-                    <asp:Menu DataSourceID="SiteMapDataSource1" runat="server"
-                        StaticDisplayLevels="2" MaximumDynamicDisplayLevels="4"
-                        Orientation="Horizontal" StaticMenuItemStyle-HorizontalPadding="13px"
-                        StaticMenuItemStyle-VerticalPadding="6px" Height="30px">
-                        <StaticHoverStyle BackColor="#C70609" ForeColor="White" />
-                        <DynamicHoverStyle BackColor="#993333" ForeColor="White" />
-                        <StaticMenuItemStyle  CssClass="staticmenuitem"/>
-                        <DynamicMenuItemStyle CssClass="dynamicmenuitem"/>
-                    </asp:Menu>
-                 </div>
-            </div>
-        </header>
-    <!--header end -->
-        <div class="header-bottom">
-            <div id="sitemappath" class="container">
-                <asp:SiteMapPath runat="server" 
-                    CssClass="mappath" Font-Size="17px"></asp:SiteMapPath>
-                <div class="right-info">
-                    <p class="cd-headline rotate-1" style="color: #efeadf; cursor: default; font-family: Ropa Sans,sans-serif; font-size: 15px;">
-                        <span>We are open every day from 8:30am till 10:30pm</span>
-                    </p>
-                </div>
-            </div>
-        </div>
-        <!-- navigation form end -->
-        <!-- web content begin -->
+ <head runat="server"> 
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /> 
+  <link rel="stylesheet" type="text/css" media="screen" href="https://cdn.bootcss.com/normalize/7.0.0/normalize.min.css" /> 
+  <link rel="stylesheet" type="text/css" media="screen" href="https://cdn.bootcss.com/bootstrap/3.3.6/css/bootstrap.min.css" /> 
+  <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" /> 
+  <script src="https://cdn.bootcss.com/jquery/2.1.1/jquery.min.js"></script> 
+  <script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"></script> 
+  <link rel="stylesheet" type="text/css" media="screen" href="css/styletry.css" /> 
+  <script type="text/javascript" src="js/jquery-1.9.1.min.js"></script> 
+  <script type="text/javascript" src="js/form.js"></script> 
+  <script src="js/jquery.jgrowl.js" type="text/javascript"></script> 
+  <script type="text/javascript" src="js/modernizr.custom.79639.js"></script> 
+  <script type="text/javascript" src="js/jquery.swatchbook.js"></script> 
+  <script type="text/javascript" src="js/sketch.min.js"></script> 
+  <script type="text/javascript" src="js/ui.js"></script> 
+  <script type="text/javascript" src="js/jquery.dropdown.js"></script> 
+  <script src="js/modernizr.custom.63321.js"></script> 
+  <script type="text/javascript" src="js/PisualFumikaLogin.js"></script> 
+  <title></title> 
+ </head>
+ <body>
+  <asp:contentplaceholder id="head" runat="server"> 
+  </asp:contentplaceholder>   
+  <script>
+      function CloseMouseEffects() {
 
-        <div class="clearf"  style="height:100%;">
-            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
-            </asp:ContentPlaceHolder>
-        </div>
-    </form>
-        <!-- web content end -->
+          demo.mousemove = function () {
 
-    </div>
-<!--footer begin -->
-     <footer class="commonfooter">
-        <div class ="befor-foot"></div>
-        <div class ="copyotherInfo" style ="text-align: center;">           
-           <a href="http://unimous.blogspot.com/"><img src="images/blogger.png"></a>
-           <a href="https://www.facebook.com/100001830559656"><img src="images/facebook.png"></a>
-           <a href="http://www.renren.com/230871232"><img src="images/32-renren.png"></a>
-           <a href="http://t.qq.com/unimous"><img src="images/32-qqweibo.png"></a>
-           <a href="http://weibo.com/u/2342610904"><img src="images/32-weibo.png"></a>               
-        </div>
+          };
 
-        <div class ="copyright" style="text-align:center">
-           Copyright © 2017 <span class="zh_cn">Jxie</span> &amp; <span class="zh_cn">Lzhen</span>
-        </div>
+      }
 
-        <div class ="disclaimer" style="text-align:center;">
-           <a href="http://users.monash.edu.au/~sgrose/msh/disclaimer.htm">Disclaimer</a> | <a href="../Acknowledgement.aspx">Acknowledgement</a>
-            | mailto: <a href="mailto:fit5192@monash.edu">author</a> 
-           <a href="mailto:fit5192@monash.edu">webmaster</a>
-        </div>
-      </footer>
-<!-- footer end -->
-</body>
+
+
+      function OpenMouseEffects() {
+
+
+
+          demo.mousemove = function () {
+
+
+
+              var particle, theta, force, touch, max, i, j, n;
+
+
+
+              for (i = 0, n = demo.touches.length; i < n; i++) {
+
+
+
+                  touch = demo.touches[i], max = random(1, 4);
+
+                  for (j = 0; j < max; j++) {
+
+                      demo.spawn(touch.x, touch.y);
+
+                  }
+
+
+
+              }
+
+          };
+
+
+
+      }
+    </script> 
+  <div id="test" style=" position:fixed;top:0px;z-index:20;"></div> 
+  <div class="dat-menu-container" style="height:100%;"> 
+   <!--Navigation form begin --> 
+   <form id="form1" class="clearf" runat="server"> 
+    <!-- header begin --> 
+    <header id="myheader"> 
+     <div class="container clearf"> 
+      <div class="logo"> 
+       <a href="index.aspx"><img id="logoimage" src="../images/icon.jpg" alt="logo" /></a> 
+      </div> 
+      <div class="header-login"> 
+       <a href="login.aspx" id="loginname" runat="server">Login</a> | 
+       <a href="logout.aspx" id="logout" runat="server" style="display:none">Logout</a> 
+      </div> 
+      <div id="after-login" class="navi-menu"> 
+       <asp:sitemapdatasource id="SiteMapDataSource1" runat="server" /> 
+       <asp:menu datasourceid="SiteMapDataSource1" runat="server" staticdisplaylevels="2" maximumdynamicdisplaylevels="4" orientation="Horizontal" staticmenuitemstyle-horizontalpadding="13px" staticmenuitemstyle-verticalpadding="6px" height="30px"> 
+        <statichoverstyle backcolor="#C70609" forecolor="White" /> 
+        <dynamichoverstyle backcolor="#993333" forecolor="White" /> 
+        <staticmenuitemstyle cssclass="staticmenuitem" /> 
+        <dynamicmenuitemstyle cssclass="dynamicmenuitem" /> 
+       </asp:menu> 
+      </div> 
+     </div> 
+    </header> 
+    <!--header end --> 
+    <div class="header-bottom"> 
+     <div id="sitemappath" class="container"> 
+      <asp:sitemappath runat="server" cssclass="mappath" font-size="17px"></asp:sitemappath> 
+      <div class="right-info"> 
+       <p class="cd-headline rotate-1" style="color: #efeadf; cursor: default; font-family: Ropa Sans,sans-serif; font-size: 15px;"> <span>We are open every day from 8:30am till 10:30pm</span> </p> 
+      </div> 
+     </div> 
+    </div> 
+    <!-- navigation form end --> 
+    <!-- web content begin --> 
+    <div class="clearf" style="height:100%;"> 
+     <asp:contentplaceholder id="ContentPlaceHolder1" runat="server"> 
+     </asp:contentplaceholder> 
+    </div> 
+   </form> 
+   <!-- web content end --> 
+  </div> 
+  <!--footer begin --> 
+  <footer class="commonfooter"> 
+   <div class="befor-foot"></div> 
+   <div class="copyotherInfo" style="text-align: center;"> 
+    <a href="http://unimous.blogspot.com/"><img src="images/blogger.png" /></a> 
+    <a href="https://www.facebook.com/100001830559656"><img src="images/facebook.png" /></a> 
+    <a href="http://www.renren.com/230871232"><img src="images/32-renren.png" /></a> 
+    <a href="http://t.qq.com/unimous"><img src="images/32-qqweibo.png" /></a> 
+    <a href="http://weibo.com/u/2342610904"><img src="images/32-weibo.png" /></a> 
+   </div> 
+   <div class="copyright" style="text-align:center">
+     Copyright &copy; 2017 
+    <span class="zh_cn">Jxie</span> &amp; 
+    <span class="zh_cn">Lzhen</span> 
+   </div> 
+   <div class="disclaimer" style="text-align:center;"> 
+    <a href="http://users.monash.edu.au/~sgrose/msh/disclaimer.htm">Disclaimer</a> | 
+    <a href="../Acknowledgement.aspx">Acknowledgement</a> | mailto: 
+    <a href="mailto:fit5192@monash.edu">author</a> 
+    <a href="mailto:fit5192@monash.edu">webmaster</a> 
+   </div> 
+  </footer> 
+  <!-- footer end --> 
+  <script>
+
+        // ----------------------------------------
+
+        // Particle
+
+        // ----------------------------------------
+
+
+
+        function Particle(x, y, radius) {
+
+            this.init(x, y, radius);
+
+        }
+
+
+
+        Particle.prototype = {
+
+
+
+            init: function (x, y, radius) {
+
+
+
+                this.alive = true;
+
+
+
+                this.radius = radius || 10;
+
+                this.wander = 0.15;
+
+                this.theta = random(TWO_PI);
+
+                this.drag = 0.92;
+
+                this.color = '#fff';
+
+
+
+                this.x = x || 0.0;
+
+                this.y = y || 0.0;
+
+
+
+                this.vx = 0.0;
+
+                this.vy = 0.0;
+
+            },
+
+
+
+            move: function () {
+
+
+
+                this.x += this.vx;
+
+                this.y += this.vy;
+
+
+
+                this.vx *= this.drag;
+
+                this.vy *= this.drag;
+
+
+
+                this.theta += random(-0.5, 0.5) * this.wander;
+
+                this.vx += sin(this.theta) * 0.1;
+
+                this.vy += cos(this.theta) * 0.1;
+
+
+
+                this.radius *= 0.96;
+
+                this.alive = this.radius > 0.5;
+
+            },
+
+
+
+            draw: function (ctx) {
+
+
+
+                ctx.beginPath();
+
+                ctx.arc(this.x, this.y, this.radius, 0, TWO_PI);
+
+                ctx.fillStyle = this.color;
+
+                ctx.fill();
+
+            }
+
+        };
+
+
+
+        // ----------------------------------------
+
+        // Example
+
+        // ----------------------------------------
+
+
+
+        var MAX_PARTICLES = 280;
+
+        var COLOURS = ['#69D2E7', '#A7DBD8', '#E0E4CC', '#F38630', '#FA6900',
+
+            '#FF4E50', '#F9D423'];
+
+
+
+        var particles = [];
+
+        var pool = [];
+
+
+
+        var demo = Sketch.create({
+
+            container: document.getElementById('test')
+
+        });
+
+
+
+        demo.setup = function () {
+
+
+
+            // Set off some initial particles.
+
+            var i, x, y;
+
+
+
+            //  for ( i = 0; i < 20; i++ ) {
+
+            x = (demo.width * 0.5) + random(-100, 100);
+
+            y = (demo.height * 0.5) + random(-100, 100);
+
+            demo.spawn(0, 999);
+
+            // }
+
+        };
+
+
+
+        demo.spawn = function (x, y) {
+
+
+
+            if (particles.length >= MAX_PARTICLES)
+
+                pool.push(particles.shift());
+
+
+
+            particle = pool.length ? pool.pop() : new Particle();
+
+            particle.init(x, y, random(5, 40));
+
+
+
+            particle.wander = random(0.5, 2.0);
+
+            particle.color = random(COLOURS);
+
+            particle.drag = random(0.9, 0.99);
+
+
+
+            theta = random(TWO_PI);
+
+            force = random(2, 8);
+
+
+
+            particle.vx = sin(theta) * force;
+
+            particle.vy = cos(theta) * force;
+
+
+
+            particles.push(particle);
+
+        };
+
+
+
+        demo.update = function () {
+
+
+
+            var i, particle;
+
+
+
+            for (i = particles.length - 1; i >= 0; i--) {
+
+
+
+                particle = particles[i];
+
+
+
+                if (particle.alive)
+
+                    particle.move();
+
+                else
+
+                    pool.push(particles.splice(i, 1)[0]);
+
+            }
+
+        };
+
+
+
+        demo.draw = function () {
+
+
+
+            demo.globalCompositeOperation = 'lighter';
+
+
+
+            for (var i = particles.length - 1; i >= 0; i--) {
+
+                particles[i].draw(demo);
+
+            }
+
+        };
+
+
+
+        demo.mousemove = function () {
+
+
+
+            var particle, theta, force, touch, max, i, j, n;
+
+
+
+            for (i = 0, n = demo.touches.length; i < n; i++) {
+
+
+
+                touch = demo.touches[i], max = random(1, 4);
+
+                for (j = 0; j < max; j++) {
+
+                    demo.spawn(touch.x, touch.y);
+
+                }
+
+
+
+            }
+
+        };
+
+	</script>   
+ </body>
 </html>

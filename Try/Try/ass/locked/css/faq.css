@@ -1,0 +1,30 @@
+﻿#article_holder {
+    width: 100%;
+    font-family: 'Ropa Sans', sans-serif;
+}
+
+p {
+    margin: 0 0 30px;
+    line-height: 24px;
+    display: block;
+    text-align: left;
+    padding: 0px 0px 0px 12px;
+    font-family: 'Ropa Sans', sans-serif;
+    color: #5d4d43;
+}
+
+b, strong {
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 24px;
+    text-align: left;
+    display: block;
+    padding: 0px 0px 0px 2px;
+    font-family: 'Ropa Sans', sans-serif;
+}
+
+#faqhead {
+    font-size: 30px;
+    padding-top: 30px;
+    font-family: 'Ropa Sans', sans-serif;
+}
