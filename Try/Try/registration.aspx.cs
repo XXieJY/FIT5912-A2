@@ -27,6 +27,8 @@ namespace Try
                     + "window.location.href='index.aspx';" 
                     + "</script>");
             }
+           // Request.ApplicationPath;
+           // this.addrecords
         }
 
         protected void Button1_Click(object sender, EventArgs e)

@@ -12,6 +12,7 @@ namespace Try.ass.locked
     {
         protected void Page_Load(object sender, EventArgs e)
         {
+            
             string filePath = Server.MapPath(Request.QueryString["filename"]);
             FileInfo file = new FileInfo(filePath);
             // Response.Write("File name: " + Request.QueryString["filename"] + "<br />");

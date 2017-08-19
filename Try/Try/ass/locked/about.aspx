@@ -1,6 +1,7 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site1.Master" AutoEventWireup="true" CodeBehind="about.aspx.cs" Inherits="Try.about" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
      <link rel="stylesheet" type="text/css" media="screen" href="css/aboutus.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="css/gridview.css" />
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
    
@@ -32,4 +33,7 @@
         </div>
         
     </div>  
+       <div class="sourcecontainer" style="z-index:999;">
+            <div class="getSourceItem"><a href="source.aspx?filename=about.aspx" style="color:white;" target="_blank">About us</a></div>
+        </div>
 </asp:Content>

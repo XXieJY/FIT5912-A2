@@ -5,7 +5,8 @@
     <siteMapNode url="~/registration.aspx" title="Registration"  description="Registration"/>
     <siteMapNode url="~/ass/locked/map.aspx" title="Site map"  description="Site map"/>
     <siteMapNode url="~/ass/locked/doc.aspx" title="Documentation"  description="Documentation"/>
-    <siteMapNode url="~/ass/locked/displayandsearch.aspx" title="Display and Search"  description="Display and Search"/>
+    <siteMapNode url="~/ass/locked/displayandsearch.aspx" title="Search"  description="Display and Search"/>
+    <siteMapNode url="~/ass/locked/email.aspx" title="Email"  description="Email"/>
     <siteMapNode url="~/ass/locked/about.aspx" title="About us"  description="About us">
       <siteMapNode url="~/ass/locked/history.aspx" title="Our history"  description="Our history" />
       <siteMapNode url="~/ass/locked/freq.aspx" title="Frequently asked questions"  description="frequently asked questions" />

@@ -1,0 +1,26 @@
+.sourcecontainer {
+    font-family: Arial;
+    font-weight: bold;
+    font-size: 12px;
+    color: white;
+    position: relative;
+    bottom: 12px;
+    float: left;
+    padding: 0px 0px 5px 5px;
+    z-index: 100;
+    display:inline-block;
+    
+}
+
+.sourcecontainer .getSourceItem {
+        padding: 1px 4px;
+        display: inline-block;
+        background-color: rgba(69, 126, 155, 0.9);
+        box-shadow: 0px 0px 3px rgba(69, 126, 155, 0.9);
+        text-shadow: 1px 1px 0px #333;
+}
+
+.sourcecontainer .getSourceItem:hover {
+    background-color: rgba(29, 86, 115, 0.9);
+    box-shadow: 0px 0px 3px rgba(29, 86, 115, 0.9);
+}

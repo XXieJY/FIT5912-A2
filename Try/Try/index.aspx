@@ -4,6 +4,7 @@
     <link rel="stylesheet" type="text/css" media="screen" href="css/styletry.css" />
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/aboutus.css" />
+    <link rel="stylesheet" href="css/commonicon.css" />
 </asp:Content>
 
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
@@ -112,7 +113,13 @@
                        </div>
                    </div>
                 </div> 
-           <!--about us 结束--> 
-  </div>
+           <!--about us 结束-->
+       </div>
+
+       <div class="sourcecontainer" style="z-index:999;">
+            <div class="getSourceItem"><a href="#" style="color:white;" target="_blank">AdRotator</a></div>
+            <div class="getSourceItem"><a href="/ass/locked/source.aspx?filename=~/index.aspx" style="color:white;">Master Page</a></div>
+       </div>
+
     
 </asp:Content>

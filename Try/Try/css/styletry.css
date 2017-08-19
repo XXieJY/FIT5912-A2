@@ -192,3 +192,48 @@ body {
 html {
     height: 100%;
 }
+
+.ourcanvas {
+    pointer-events:all;
+}
+
+/*canlendar style*/
+
+#calendarcontainer {
+    display: inline-block;
+    position: fixed;
+    z-index: 200;
+    padding: 20px 20px;
+    left: 5px;
+    text-align: center;
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #333;
+    vertical-align: middle;
+    border-color: inherit;
+}
+
+#eventdetails {
+    width: 208px;
+    border-width: 1px;
+    border-style: solid;
+    border-collapse: collapse;
+    border-color:grey;
+    margin-top: 5px;
+}
+
+#eventtitle {
+    text-align:left;
+}
+
+#eventcontent {
+    text-align: left;
+    padding-left: 16px;
+}
+
+/*************set component to display none******/
+
+.displaynone {
+    display:none;
+}

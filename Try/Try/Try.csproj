@@ -75,6 +75,7 @@
     <Content Include="ass\locked\all.aspx" />
     <Content Include="ass\locked\displayandsearch.aspx" />
     <Content Include="ass\locked\doc.aspx" />
+    <Content Include="ass\locked\email.aspx" />
     <Content Include="ass\locked\freq.aspx" />
     <Content Include="ass\locked\history.aspx" />
     <Content Include="ass\locked\source.aspx" />
@@ -90,7 +91,6 @@
     <Content Include="Site1.Master" />
     <Content Include="index.aspx" />
     <Content Include="ass\locked\Web.config" />
-    <Content Include="source.aspx" />
     <Content Include="WebForm2.aspx" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
@@ -133,6 +133,13 @@
     </Compile>
     <Compile Include="ass\locked\doc.aspx.designer.cs">
       <DependentUpon>doc.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ass\locked\email.aspx.cs">
+      <DependentUpon>email.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ass\locked\email.aspx.designer.cs">
+      <DependentUpon>email.aspx</DependentUpon>
     </Compile>
     <Compile Include="ass\locked\freq.aspx.cs">
       <DependentUpon>freq.aspx</DependentUpon>
@@ -200,13 +207,6 @@
     </Compile>
     <Compile Include="index.aspx.designer.cs">
       <DependentUpon>index.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="source.aspx.cs">
-      <DependentUpon>source.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="source.aspx.designer.cs">
-      <DependentUpon>source.aspx</DependentUpon>
     </Compile>
     <Compile Include="WebForm2.aspx.cs">
       <DependentUpon>WebForm2.aspx</DependentUpon>
